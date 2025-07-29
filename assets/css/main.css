@@ -18,7 +18,7 @@
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
+:root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #45505b; /* Color for headings, subheadings and title throughout the website */
@@ -691,11 +691,14 @@ section,
 }
 
 .skills .progress-bar {
-  width: 1px;
+  width: 0;
+  min-width: 0;
   height: 10px;
-  transition: 0.9s;
+  transition: width 0.9s ease-in-out;
   background-color: var(--accent-color);
+  box-sizing: border-box;
 }
+
 
 /*--------------------------------------------------------------
 # Resume Section
