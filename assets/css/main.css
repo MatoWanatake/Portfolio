@@ -1460,3 +1460,11 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+.portfolio-item.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  background: #f8f9fa;
+  border: 2px dashed #ccc;
+}
